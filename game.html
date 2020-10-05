@@ -100,14 +100,15 @@
 
 
     function computerMovement(){
+        
         var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
 
-        if(paddle2YCenter < ballY - 30){
+        if(paddle2YCenter < ballY - 35){
 
-            paddle2Y += 7;
+            paddle2Y += 8;
         } 
-        else{
-            paddle2Y -= 7;
+        else if(paddle2YCenter > ballY +35){
+            paddle2Y -= 8;
 
         }
 
